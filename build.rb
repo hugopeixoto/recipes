@@ -11,6 +11,7 @@ end
 
 require 'microformats'
 require 'mustache'
+require 'fileutils'
 
 articles = Dir["src/assets/*.html"]
   .reject { |x| x == "src/assets/index.html" }
