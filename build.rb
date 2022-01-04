@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'microformats'
-require 'mustache'
 require 'bundler/inline'
 
 gemfile do
@@ -10,6 +8,9 @@ gemfile do
   gem 'microformats'
   gem 'mustache'
 end
+
+require 'microformats'
+require 'mustache'
 
 articles = Dir["src/assets/*.html"]
   .reject { |x| x == "src/assets/index.html" }
